@@ -15,7 +15,7 @@ body {
     font-family: "Material Icons";
     font-weight: normal;
     font-style: normal;
-    font-size: 48px; /* Preferred icon size */
+    font-size: 48px; 
     display: inline-block;
     line-height: 1;
     text-transform: none;
@@ -156,11 +156,50 @@ body {
   }
   
   .form-container .welcome-screen-container {
-    background-color: black;
+    background-color: rgb(204, 83, 83);
     height: 100%;
     width: 50%;
   }
   
+  .slider-frame {
+	width: 2000px;
+    height: auto;
+	margin:50px auto 0;
+	overflow: hidden;
+}
+
+    .slider-frame ul {
+	display: flex;
+	padding: 0;
+	width: 85%;
+	
+	animation: slide 20s infinite alternate ease-in-out;
+}
+
+    .slider-frame li {
+	width: 100%;
+	list-style: none;
+}
+
+    .slider-frame img {
+	width: auto;
+    height: auto;
+}
+
+    @keyframes slide {
+        0% {margin-left: 0;}
+        20% {margin-left: 0;}
+        
+        25% {margin-left: -100%;}
+        45% {margin-left: -100%;}
+        
+        50% {margin-left: -200%;}
+        70% {margin-left: -200%;}
+        
+        75% {margin-left: -300%;}
+        100% {margin-left: -300%;}
+ }
+
   @media screen and (max-width: 1357px) {
     .form-container {
       width: 95%;
