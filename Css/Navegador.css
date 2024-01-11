@@ -2,11 +2,13 @@
 body{
   padding: 0;
   margin: 0;
+  background-color: #e5f1d9;
 }
+
 
 /*NAVEGADOR PARTE PRINCIPAL*/
 nav {
-    background-image: radial-gradient(circle at -11.24% 14.64%, #abff1d 0, #7cff1e 25%, #2df31d 50%, #00e423 75%, #00d932 100%);
+    background-image: radial-gradient(circle at -11.24% 14.64%, #dbf6bb 0, #d0f4a9 25%, #baf779 50%, #9ef17c 75%, #96f36b 100%);
     width: 100%;
   }
   nav .mobile {
@@ -18,7 +20,7 @@ nav {
   }
   
   nav a {
-    color: white;
+    color: rgb(0, 0, 0);
     text-decoration: none;
     display: block;
     padding: 20px 25px;
@@ -26,7 +28,7 @@ nav {
   
   nav a:hover {
     color: black;
-    background-color: rgb(0, 195, 255);
+    background-color: rgb(72, 255, 0);
   }
   
   nav .desktop {
@@ -99,6 +101,126 @@ nav {
     }
   }
 /*FIN NAVEGADOR*/
+
+/*cartas*/
+
+.cards {
+  display: flex;
+  width: 130%;
+  padding: 50px;
+}
+
+.card {
+  background: rgb(239, 235, 179);
+  background: linear-gradient(
+    90deg,
+    rgb(240, 241, 180) 1%,
+    rgb(244, 231, 161) 100%
+  );
+  color: rgb(5, 5, 5);
+  width: 300px;
+  height: 350px;
+  border-radius: 10px;
+  padding: 30px;
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  box-shadow: -3px 0 10px rgba(0, 0, 0, 0.3), -4px 0 10px rgba(0, 0, 0, 0.2),
+    -5px 0 10px rgba(0, 0, 0, 0.1);
+
+  transition: all 0.3s ease;
+}
+
+.card a {
+  color: rgb(10, 10, 10);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.card a:hover {
+  color: lightyellow;
+}
+
+.card:hover {
+  margin-right: 80px;
+  transform: rotate(3deg) translateY(-15px);
+}
+
+.card .header {
+  flex: 1;
+}
+
+.card .header .date {
+  padding: 10px 0;
+}
+
+.card .header .title {
+  font-size: 28px;
+}
+
+card[class*="element"] {
+  margin-left: -100px;
+}
+
+.element-1:hover,
+.element-2:hover {
+  margin-left: -130px;
+}
+/*tablas*/
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  width: 800px;
+  margin: 100px auto;
+}
+
+td,
+th {
+  border: solid 1px #ccc;
+  padding: 5px;
+}
+tr:nth-child(even) {
+  background-color: #ddd;
+}
+
+td:nth-child(3),
+th:nth-child(3) {
+  text-align: right;
+}
+td:nth-child(4),
+th:nth-child(4) {
+  text-align: center;
+}
+
+tbody tr:hover {
+  background-color: rgb(160, 255, 188) !important;
+}
+
+thead {
+  background-color: black;
+  color: white;
+  position: sticky;
+  top: 0;
+}
+h2 {
+  text-align: center;
+}
+
+.imgval {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+    height: auto;
+  
+}
+
 
 /*Footer*/
 footer{
