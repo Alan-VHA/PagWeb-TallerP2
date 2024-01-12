@@ -106,9 +106,9 @@ body{
 }
 
 .notification {
-  width: 60px;
+  width: 80px;
   margin: 0 auto;
-
+  
   animation: ring 4s 0.7s ease-in-out infinite;
   transform-origin: 50% 4px;
 }
@@ -131,8 +131,8 @@ body{
   border-radius: 50%;
   color: white;
   position: relative;
-  top: 20px;
-  left: -5px;
+  top: -20px;
+  left: 15px;
 }
 
 @keyframes ring {
@@ -242,6 +242,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex: 1;
     padding: 0 20px;
   }
   
